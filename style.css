@@ -236,3 +236,301 @@ img {
     font-size: 14px;
     color: var(--color-text-muted);
 }
+.pricing {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 24px;
+}
+
+.pricing-grid {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    background-color: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 36px 32px;
+    width: 320px;
+}
+
+.price-card-featured {
+    background-color: var(--color-dark);
+    color: #ffffff;
+    border: none;
+}
+
+.plan-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-muted);
+    margin-bottom: 12px;
+}
+
+.price-card-featured .plan-label {
+    color: var(--color-tag);
+}
+
+.plan-price {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.plan-sub {
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+.price-card-featured .plan-sub {
+    color: #a1a3b5;
+}
+
+.plan-divider {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: 20px 0;
+}
+
+.price-card-featured .plan-divider {
+    border-top: 1px solid #262a40;
+}
+
+.plan-features {
+    margin-bottom: 28px;
+}
+
+.plan-features li {
+    padding-left: 22px;
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.plan-features li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-tag);
+}
+
+.plan-btn {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.hackathon {
+    position: relative;
+    background-color: #06080f;
+    padding: 100px 24px;
+    overflow: hidden;
+}
+
+.hackathon::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.35), transparent 70%);
+    filter: blur(20px);
+    pointer-events: none;
+}
+
+.hackathon::after {
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    right: -100px;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.28), transparent 70%);
+    filter: blur(20px);
+    pointer-events: none;
+}
+
+.hackathon-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hackathon-heading {
+    max-width: 640px;
+    margin-bottom: 56px;
+}
+
+.section-label {
+    display: inline-block;
+    color: #93c5fd;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(147, 197, 253, 0.35);
+    padding: 6px 14px;
+    border-radius: 30px;
+    margin-bottom: 18px;
+}
+
+.hackathon-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.hackathon-heading p {
+    color: #a3a8bd;
+    font-size: 16px;
+}
+
+.hackathon-body {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.hackathon-cards {
+    flex: 2;
+    min-width: 320px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.hack-card {
+    background: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    padding: 28px 24px;
+    transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
+}
+
+.hack-card:hover {
+    border-color: rgba(147, 197, 253, 0.5);
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-6px);
+}
+
+.hack-card-highlight {
+    background: linear-gradient(160deg, rgba(37, 99, 235, 0.55) 0%, rgba(29, 63, 168, 0.55) 100%);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(147, 197, 253, 0.5);
+    box-shadow: 0 20px 40px -15px rgba(37, 99, 235, 0.45);
+}
+
+.hack-card-highlight:hover {
+    transform: translateY(-6px);
+    border-color: rgba(147, 197, 253, 0.7);
+}
+
+.hack-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: rgba(147, 197, 253, 0.14);
+    color: #93c5fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hack-card-highlight .hack-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.hack-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.hack-card p {
+    font-size: 14px;
+    color: #a3a8bd;
+    line-height: 1.55;
+}
+
+.hack-card-highlight p {
+    color: #e2e9ff;
+}
+
+.hackathon-stats {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 14px;
+    padding: 22px 28px;
+    text-align: center;
+    transition: border-color 0.25s ease;
+}
+
+.stat-box:hover {
+    border-color: rgba(147, 197, 253, 0.5);
+}
+
+.stat-number {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #93c5fd, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.stat-label {
+    color: #a3a8bd;
+    font-size: 13px;
+}
+
+.hack-btn {
+    text-align: center;
+    margin-top: 6px;
+    background: linear-gradient(135deg, #2563eb 0%, #4338ca 100%);
+    box-shadow: 0 12px 28px -10px rgba(37, 99, 235, 0.6);
+}
+
+.hack-btn:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #3730a3 100%);
+}
+
+@media (max-width: 900px) {
+    .hackathon-cards {
+        grid-template-columns: 1fr;
+    }
+}
