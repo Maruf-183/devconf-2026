@@ -78,9 +78,10 @@ img {
     width: 282px;
     height: 74px;
     font-size: 17px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .section-heading {
@@ -137,4 +138,49 @@ img {
 
 .nav-menu a:hover {
     color: var(--color-primary);
+}
+.hero {
+    position: relative;
+    min-height: 786px;
+    background-image: url("./assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(13, 24, 42, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 959px;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.hero-heading {
+    font-family: var(--font-body);
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -3.2px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.hero-heading em {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.hero-text {
+    color: #d4d5e0;
+    font-size: 18px;
+    margin-bottom: 32px;
 }
