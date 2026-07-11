@@ -534,3 +534,142 @@ img {
         grid-template-columns: 1fr;
     }
 }
+.footer {
+    background-color: var(--color-dark);
+    color: #ffffff;
+    padding: 50px 24px 30px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    height: 28px;
+}
+
+.social-links {
+    display: flex;
+    gap: 18px;
+}
+
+.social-links a {
+    color: #ffffff;
+}
+
+.social-links a:hover {
+    color: var(--color-tag);
+}
+
+.footer-divider {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #262a40;
+    margin-bottom: 20px;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #a1a3b5;
+    font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+    .navbar-container {
+        padding: 0 24px;
+    }
+
+    .hero-heading {
+        font-size: 52px;
+        line-height: 58px;
+        letter-spacing: -1.5px;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hackathon-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 16px 0;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav-menu ul {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero-heading {
+        font-size: 38px;
+        line-height: 44px;
+        letter-spacing: -1px;
+    }
+
+    .btn-large {
+        width: 100%;
+        max-width: 282px;
+        height: 60px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-heading {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .speaker-photo {
+        height: 220px;
+    }
+
+    .stat-box {
+        padding: 20px;
+    }
+}
